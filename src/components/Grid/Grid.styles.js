@@ -1,14 +1,13 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-  max-width: var(--maxWidth);
+  max-width: 100%; //var(--maxWidth);
   margin: 0 auto;
   padding: 0 20px;
-  background: var(--darkGrey);
+  //background: var(--darkGrey) dark theme;
 
   h1 {
-    color: var(--white);
-
+    color: var(--darkGrey); //var(--white) dark theme;
     @media screen and (max-width: 768px) {
       font-size: var(--fontBig);
     }
