@@ -4,9 +4,10 @@ export const Wrapper = styled.div`
   max-width: var(--maxWidth);
   margin: 0 auto;
   padding: 0 20px;
+  background: var(--darkGrey);
 
   h1 {
-    color: var(--medGrey);
+    color: var(--white);
 
     @media screen and (max-width: 768px) {
       font-size: var(--fontBig);
