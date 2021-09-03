@@ -8,7 +8,7 @@ export const calcTime = (time) => {
 export const convertMoney = (money) => {
   const formatter = new Intl.NumberFormat('pt-PT', {
     style: 'currency',
-    currency: '€',
+    currency: 'eur',
     minimumFractionDigits: 0,
   });
   return formatter.format(money);
