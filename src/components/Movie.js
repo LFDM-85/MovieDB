@@ -11,6 +11,7 @@ import BreadCrumb from './BreadCrumb';
 import MovieInfo from './MovieInfo';
 import MovieInfoBar from './MovieInfoBar';
 import Actor from './Actor';
+import ScrollUp from './ScrollUp';
 
 // Hook
 import { useMovieFetch } from '../hooks/useMovieFetch';
@@ -49,6 +50,7 @@ const Movie = () => {
           />
         ))}
       </Grid>
+      <ScrollUp />
     </>
   );
 };
