@@ -1,3 +1,8 @@
-import { Spinner } from './Spinner.styles';
+import { Wrapper, Content } from './Spinner.styles';
 
+const Spinner = () => (
+  <Wrapper>
+    <Content />
+  </Wrapper>
+);
 export default Spinner;
