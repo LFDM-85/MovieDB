@@ -3,6 +3,9 @@ import { useState, useEffect } from 'react';
 // API
 import API from '../API';
 
+// Helpers
+import { isPersistedState } from '../helpers';
+
 const initialState = {
   page: 0,
   results: [],
@@ -37,6 +40,15 @@ export const useHomeFetch = () => {
 
   // Initial and search
   useEffect(() => {
+    if (!searchTerm) {
+      const sessionSate = isPersistedState('homeState');
+
+      if (sessionSate) {
+        setState(sessionSate);
+        return;
+      }
+    }
+
     setState(initialState);
     fetchMovies(1, searchTerm);
   }, [searchTerm]);
